@@ -18,7 +18,7 @@ drift <- function(pop_size = 100, allele_freq = c(0.5, 0.5), generations = 100) 
 
     # Create a data.frame in which we'll store the resuts
     res <- matrix(ncol = allele_nb, nrow = generations)
-    res <- as.tibble(res)
+    res <- as_tibble(res)
     names(res) <- letters[1:allele_nb]
     res[1, ] <- allele_freq
 
